@@ -5,15 +5,24 @@ The Stempel (Polish) Analysis plugin integrates Lucene stempel (polish) analysis
 
 In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-analysis-stempel/2.0.0`.
 
-* For 1.0.x elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/master).
-* For 0.90.x elasticsearch versions, look at [1.x branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/1.x).
+* For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/master).
+* For 1.1.x elasticsearch versions, look at [es-1.1 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.1).
+* For 1.0.x elasticsearch versions, look at [es-1.0 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.0).
+* For 0.90.x elasticsearch versions, look at [es-0.90 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-0.90).
 
 |   Stempel Analysis Plugin  |    elasticsearch    | Release date |
 |----------------------------|---------------------|:------------:|
-| 2.1.0-SNAPSHOT             | 1.0.0.RC1 -> master |  XXXX-XX-XX  |
-| 2.0.0                      | 1.0.0.RC1 -> master |  2014-02-28  |
-| 2.0.0.RC2                  | 1.0.0.RC1 -> master |  2014-02-05  |
-| 2.0.0.RC1                  | 1.0.0.RC1 -> master |  2014-01-15  |
+| 2.0.1-SNAPSHOT             | 1.0.0.RC1 -> 1.0    |  XXXX-XX-XX  |
+| 2.0.0                      | 1.0.0.RC1 -> 1.0    |  2014-02-28  |
+| 2.0.0.RC2                  | 1.0.0.RC1 -> 1.0    |  2014-02-05  |
+| 2.0.0.RC1                  | 1.0.0.RC1 -> 1.0    |  2014-01-15  |
+
+Please read documentation relative to the version you are using:
+
+* [2.0.1-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-analysis-stempel/blob/es-1.0/README.md)
+* [2.0.0](https://github.com/elasticsearch/elasticsearch-analysis-stempel/blob/v2.0.0/README.md)
+* [2.0.0.RC2](https://github.com/elasticsearch/elasticsearch-analysis-stempel/blob/v2.0.0.RC2/README.md)
+* [2.0.0.RC1](https://github.com/elasticsearch/elasticsearch-analysis-stempel/blob/2.0.0.RC1/README.md)
 
 The plugin includes the `polish` analyzer and `polish_stem` token filter.
 
