@@ -19,6 +19,7 @@
 
 package org.elasticsearch.index.analysis;
 
+import org.elasticsearch.action.admin.cluster.node.info.NodesInfoResponse;
 import org.elasticsearch.action.admin.indices.analyze.AnalyzeResponse;
 import org.elasticsearch.common.settings.ImmutableSettings;
 import org.elasticsearch.common.settings.Settings;
@@ -85,4 +86,9 @@ public class SimplePolishIntegrationTests extends ElasticsearchIntegrationTest {
         ensureYellow();
     }
 
+    @Test
+    public void testPluginIsLoaded() {
+        NodesInfoResponse infos = client().admin().cluster().prepareNodesInfo().setPlugins(true).execute().actionGet();
+        assertThat(infos.getNodes()[0].getPlugins().getInfos().get(0).getName(), is("analysis-stempel"));
+    }
 }
