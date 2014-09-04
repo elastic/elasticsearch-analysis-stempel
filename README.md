@@ -3,23 +3,13 @@ Stempel (Polish) Analysis for Elasticsearch
 
 The Stempel (Polish) Analysis plugin integrates Lucene stempel (polish) analysis module into elasticsearch.
 
-In order to install the plugin, simply run: `bin/plugin -install elasticsearch/elasticsearch-analysis-stempel/2.1.0`.
+## Version 2.4.0-SNAPSHOT for Elasticsearch: 1.4
 
-* For master elasticsearch versions, look at [master branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/master).
-* For 1.4.x elasticsearch versions, look at [es-1.4 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.4).
-* For 1.3.x elasticsearch versions, look at [es-1.3 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.3).
-* For 1.2.x elasticsearch versions, look at [es-1.2 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.2).
-* For 1.1.x elasticsearch versions, look at [es-1.1 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.1).
-* For 1.0.x elasticsearch versions, look at [es-1.0 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-1.0).
-* For 0.90.x elasticsearch versions, look at [es-0.90 branch](https://github.com/elasticsearch/elasticsearch-analysis-stempel/tree/es-0.90).
+If you are looking for another version documentation, please refer to the 
+[compatibility matrix](http://github.com/elasticsearch/elasticsearch-analysis-stempel#stempel-polish-analysis-for-elasticsearch).
 
-|   Stempel Analysis Plugin  |    elasticsearch    | Release date |
-|----------------------------|---------------------|:------------:|
-| 2.4.0-SNAPSHOT             | 1.4.0 -> 1.4        |  XXXX-XX-XX  |
-
-Please read documentation relative to the version you are using:
-
-* [2.4.0-SNAPSHOT](https://github.com/elasticsearch/elasticsearch-analysis-stempel/blob/es-1.4/README.md)
+Stempel Plugin
+-------
 
 The plugin includes the `polish` analyzer and `polish_stem` token filter.
 
