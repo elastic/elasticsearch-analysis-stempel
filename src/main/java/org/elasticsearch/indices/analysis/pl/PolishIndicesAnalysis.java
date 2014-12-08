@@ -29,6 +29,8 @@ import org.elasticsearch.common.inject.Inject;
 import org.elasticsearch.common.lucene.Lucene;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.index.analysis.AnalyzerScope;
+import org.elasticsearch.index.analysis.PreBuiltAnalyzerProviderFactory;
+import org.elasticsearch.index.analysis.PreBuiltTokenFilterFactoryFactory;
 import org.elasticsearch.index.analysis.TokenFilterFactory;
 import org.elasticsearch.indices.analysis.IndicesAnalysisService;
 
@@ -43,9 +45,9 @@ public class PolishIndicesAnalysis extends AbstractComponent {
     @Inject
     public PolishIndicesAnalysis(Settings settings, IndicesAnalysisService indicesAnalysisService) {
         super(settings);
-        indicesAnalysisService.analyzerProviderFactories().put("polish", new StempelAnalyzerProviderFactory("polish", AnalyzerScope.INDICES, new PolishAnalyzer(Lucene.ANALYZER_VERSION)));
+        indicesAnalysisService.analyzerProviderFactories().put("polish", new PreBuiltAnalyzerProviderFactory("polish", AnalyzerScope.INDICES, new PolishAnalyzer(Lucene.ANALYZER_VERSION)));
 
-        indicesAnalysisService.tokenFilterFactories().put("polish_stem", new StempelTokenFilterFactoryFactory(new TokenFilterFactory() {
+        indicesAnalysisService.tokenFilterFactories().put("polish_stem", new PreBuiltTokenFilterFactoryFactory(new TokenFilterFactory() {
             @Override public String name() {
                 return "polish_stem";
             }
