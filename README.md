@@ -3,7 +3,7 @@ Stempel (Polish) Analysis for Elasticsearch
 
 The Stempel (Polish) Analysis plugin integrates Lucene stempel (polish) analysis module into elasticsearch.
 
-## Version 2.5.0 for Elasticsearch: 1.5
+## Version 2.5.1-SNAPSHOT for Elasticsearch: 1.5
 
 If you are looking for another version documentation, please refer to the 
 [compatibility matrix](http://github.com/elasticsearch/elasticsearch-analysis-stempel#stempel-polish-analysis-for-elasticsearch).
