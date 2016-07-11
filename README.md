@@ -1,19 +1,13 @@
-**IMPORTANT**: this project now moved to [elasticsearch repository](https://github.com/elastic/elasticsearch/tree/master/plugins/analysis-stempel).
+**IMPORTANT: Project MOVED!**
 
-Only important bug fixes will be merged here. If you have a question about the plugin, please use [discuss.elastic.co](https://discuss.elastic.co/c/elasticsearch). If you want to report a bug, please use [elasticsearch repository](https://github.com/elastic/elasticsearch/issues/new).
+From elasticsearch 2.0 you need to look at the following links:
 
----
+* [Source code](https://github.com/elastic/elasticsearch/tree/master/plugins/).
+* [Documentation](https://www.elastic.co/guide/en/elasticsearch/plugins/current/index.html).
+* [Question? Bugs?](https://discuss.elastic.co/c/elasticsearch)
 
-Stempel (Polish) Analysis for Elasticsearch
-==================================
+For older versions, look at the following table:
 
-The Stempel (Polish) Analysis plugin integrates Lucene stempel (polish) analysis module into elasticsearch.
-
-In order to install the plugin, simply run:
-
-```sh
-bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.7.0
-```
 
 | elasticsearch |  Stempel Analysis Plugin  |   Docs     |
 |---------------|-----------------------|------------|
@@ -29,19 +23,6 @@ bin/plugin install elasticsearch/elasticsearch-analysis-stempel/2.7.0
 | es-1.1        |  2.1.0                | [2.1.0](https://github.com/elastic/elasticsearch-analysis-stempel/tree/v2.1.0/#stempel-polish-analysis-for-elasticsearch)  |
 | es-1.0        |  2.0.0                | [2.0.0](https://github.com/elastic/elasticsearch-analysis-stempel/tree/v2.0.0/#stempel-polish-analysis-for-elasticsearch)  |
 | es-0.90       |  1.13.0               | [1.13.0](https://github.com/elastic/elasticsearch-analysis-stempel/tree/v1.13.0/#stempel-polish-analysis-for-elasticsearch)  |
-
-To build a `SNAPSHOT` version, you need to build it with Maven:
-
-```bash
-mvn clean install
-plugin --install analysis-stempel \
-       --url file:target/releases/elasticsearch-analysis-stempel-X.X.X-SNAPSHOT.zip
-```
-
-Stempel Plugin
------------------
-
-The plugin includes the `polish` analyzer and `polish_stem` token filter.
 
 License
 -------
